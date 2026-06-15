@@ -1,13 +1,507 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kai Li</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Kai Li's academic homepage. Ph.D. student at Hanyang University conducting research on human-robot collaboration, mobile manipulation, robot perception, and sensor fusion.">
+
+    <title>Kai Li | Hanyang University</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #ffffff;
+            color: #222222;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px 28px 70px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 45px;
+            padding-bottom: 35px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-photo {
+            width: 190px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #dddddd;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 38px;
+            font-weight: 600;
+        }
+
+        h2 {
+            margin-top: 42px;
+            margin-bottom: 18px;
+            padding-bottom: 7px;
+            border-bottom: 1px solid #dddddd;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        h3 {
+            margin-top: 22px;
+            margin-bottom: 7px;
+            font-size: 19px;
+        }
+
+        p {
+            margin-top: 8px;
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: #1a5fb4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .position {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .affiliation {
+            margin-top: 6px;
+            color: #444444;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            margin-right: 14px;
+            font-weight: 600;
+        }
+
+        .contact-box {
+            margin-top: 20px;
+            padding: 14px 18px;
+            background-color: #f6f8fa;
+            border-left: 4px solid #1a5fb4;
+        }
+
+        .research-list {
+            padding-left: 22px;
+        }
+
+        .research-list li {
+            margin-bottom: 7px;
+        }
+
+        .publication {
+            margin-bottom: 22px;
+        }
+
+        .publication-title {
+            font-weight: 600;
+        }
+
+        .publication-authors {
+            margin-top: 2px;
+            color: #333333;
+        }
+
+        .publication-venue {
+            margin-top: 2px;
+            color: #555555;
+        }
+
+        .publication-links {
+            margin-top: 4px;
+        }
+
+        .publication-links a {
+            margin-right: 10px;
+        }
+
+        .year {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 55px;
+            padding-top: 20px;
+            border-top: 1px solid #dddddd;
+            color: #666666;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media (max-width: 720px) {
+            header {
+                flex-direction: column-reverse;
+                gap: 25px;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 185px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .container {
+                padding: 30px 20px 55px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Kai Li</h1>
-  <p>Ph.D. Student at Hanyang University</p>
-  <p>My academic website is under construction.</p>
+
+<div class="container">
+
+    <header>
+
+        <div class="profile-text">
+
+            <h1>Kai Li</h1>
+
+            <p class="position">
+                Ph.D. Student
+            </p>
+
+            <p class="affiliation">
+                Human–Robot Collaboration Laboratory<br>
+                Department of Robotics<br>
+                Hanyang University ERICA<br>
+                Republic of Korea
+            </p>
+
+            <div class="links">
+
+                <a href="https://scholar.google.com/citations?user=lAIoqCoAAAAJ&hl=en"
+                   target="_blank">
+                    Google Scholar
+                </a>
+
+                <a href="https://github.com/lk0504"
+                   target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://harco.hanyang.ac.kr/"
+                   target="_blank">
+                    HARCO Lab
+                </a>
+
+            </div>
+
+            <div class="contact-box">
+
+                <strong>Contact</strong><br>
+
+                Email:
+                <a href="mailto:likai@hanyang.ac.kr">
+                    likai@hanyang.ac.kr
+                </a>
+
+                <br>
+
+                Alternative email:
+                <a href="mailto:likai991005@gmail.com">
+                    likai991005@gmail.com
+                </a>
+
+                <br>
+
+                Address:
+                Engineering Building 5, Room 522,
+                Hanyang University ERICA,
+                55 Hanyangdaehak-ro, Sangnok-gu,
+                Ansan-si, Gyeonggi-do 15588,
+                Republic of Korea
+
+            </div>
+
+        </div>
+
+        <!--
+        上传照片后，将下面的注释删除。
+
+        图片文件名建议设置为 profile.jpg，
+        并放在 index.html 相同目录下。
+
+        <img class="profile-photo"
+             src="profile.jpg"
+             alt="Kai Li">
+        -->
+
+    </header>
+
+
+    <section>
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a Ph.D. student in the Department of Robotics at
+            Hanyang University ERICA and a member of the Human–Robot
+            Collaboration Laboratory. My research focuses on developing
+            intelligent robotic systems that can perceive human states,
+            understand collaborative situations, and generate safe and
+            adaptive robot behaviors.
+        </p>
+
+        <p>
+            My current research interests include human–robot collaboration,
+            mobile manipulation, human intention and state recognition,
+            socially aware robot navigation, and multimodal robot perception.
+            I am particularly interested in integrating human-centered
+            perception with robot motion planning and control to support
+            proactive, safe, and context-aware collaboration between humans
+            and robots.
+        </p>
+
+        <p>
+            I have also conducted research on mobile robot localization and
+            motion control, including sensor-fusion-based indoor
+            three-dimensional localization using ultra-wideband,
+            inertial, and barometric sensors, as well as online kinematic
+            parameter estimation for skid-steering mobile robots.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>Research Interests</h2>
+
+        <ul class="research-list">
+
+            <li>
+                Human–Robot Collaboration and Human–Robot Interaction
+            </li>
+
+            <li>
+                Mobile Manipulation and Collaborative Robot Behavior
+            </li>
+
+            <li>
+                Human Intention, Posture, Orientation, and State Recognition
+            </li>
+
+            <li>
+                Human-Centered Robot Motion Planning and Control
+            </li>
+
+            <li>
+                Socially Aware Navigation and Task-Ready Approach Planning
+            </li>
+
+            <li>
+                Multimodal Perception and Vision–Language–Action Models
+            </li>
+
+            <li>
+                Robot Localization and Multisensor Fusion
+            </li>
+
+            <li>
+                Mobile Robot Modeling, Estimation, and Adaptive Control
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <section>
+
+        <h2>Publications</h2>
+
+        <p>
+            For a complete and updated publication list, please visit my
+            <a href="https://scholar.google.com/citations?user=lAIoqCoAAAAJ&hl=en"
+               target="_blank">
+                Google Scholar profile
+            </a>.
+        </p>
+
+
+        <div class="year">2024</div>
+
+        <div class="publication">
+
+            <div class="publication-title">
+                An Enhanced Indoor Three-Dimensional Localization System
+                with Sensor Fusion Based on Ultra-Wideband Ranging and
+                Dual Barometer Altimetry
+            </div>
+
+            <div class="publication-authors">
+                Le Bao, <strong>Kai Li</strong>, Joosun Lee,
+                Wenbin Dong, Wenqi Li, Kyoosik Shin, and Wansoo Kim
+            </div>
+
+            <div class="publication-venue">
+                <em>Sensors</em>, vol. 24, no. 11,
+                Article 3341, 2024.
+            </div>
+
+            <div class="publication-links">
+
+                <a href="https://doi.org/10.3390/s24113341"
+                   target="_blank">
+                    [Paper]
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="publication">
+
+            <div class="publication-title">
+                Dual UWB Anchors-Based Target Tracking Strategy for an
+                Omnidirectional Mobile Robot
+            </div>
+
+            <div class="publication-authors">
+                Le Bao, <strong>Kai Li</strong>, Wenbin Dong,
+                Wenqi Li, Kyoosik Shin, Changsoo Han, and Wansoo Kim
+            </div>
+
+            <div class="publication-venue">
+                In <em>Proceedings of the 24th International Conference
+                on Control, Automation and Systems</em>, 2024.
+            </div>
+
+        </div>
+
+
+        <div class="year">2023</div>
+
+        <div class="publication">
+
+            <div class="publication-title">
+                Adaptive Online Steering Efficiency Coefficient Estimation
+                for Enhanced Terrain Motion Control in Four-Wheeled
+                Skid-Steering Mobile Robots
+            </div>
+
+            <div class="publication-authors">
+                Le Bao, <strong>Kai Li</strong>, Changsoo Han,
+                Kyoosik Shin, and Wansoo Kim
+            </div>
+
+            <div class="publication-venue">
+                <em>International Journal of Control,
+                Automation and Systems</em>,
+                vol. 21, pp. 2444–2454, 2023.
+            </div>
+
+            <div class="publication-links">
+
+                <a href="https://doi.org/10.1007/s12555-023-0194-0"
+                   target="_blank">
+                    [Paper]
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="year">2022</div>
+
+        <div class="publication">
+
+            <div class="publication-title">
+                IMU-Based Online Kinematic Model Parameter Estimation
+                for Four-Wheeled Skid-Steering Mobile Robot Desired
+                Motion Tracking on Different Terrains
+            </div>
+
+            <div class="publication-authors">
+                <strong>Kai Li</strong>, Le Bao, Changsoo Han,
+                Kyoosik Shin, and Wansoo Kim
+            </div>
+
+            <div class="publication-venue">
+                In <em>Proceedings of the 22nd International Conference
+                on Control, Automation and Systems</em>, 2022.
+            </div>
+
+            <div class="publication-links">
+                Best Student Paper Award Finalist
+            </div>
+
+        </div>
+
+
+        <div class="publication">
+
+            <div class="publication-title">
+                A Sensor Fusion Strategy for Indoor Target
+                Three-Dimensional Localization Based on Ultra-Wideband
+                and Barometric Altimeter Measurements
+            </div>
+
+            <div class="publication-authors">
+                Le Bao, <strong>Kai Li</strong>, Wenqi Li,
+                Kyoosik Shin, and Wansoo Kim
+            </div>
+
+            <div class="publication-venue">
+                In <em>Proceedings of the 19th International Conference
+                on Ubiquitous Robots</em>, pp. 181–187, 2022.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        © 2026 Kai Li.
+        Last updated: June 2026.
+
+    </footer>
+
+</div>
+
 </body>
 </html>
+```
